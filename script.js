@@ -1,40 +1,3 @@
-// let inputs = document.querySelectorAll('.input_item_act input')
-
-// let btn = document.querySelector('button')
-
-
-// btn.onclick = () => {
-
-//     inputs.forEach((input) => {
-
-//         if (input.value === '') {
-//             input.classList.add('error')
-//             btn.style.background = 'red'
-//             btn.style.border = 'red'
-//         } else {
-//             input.classList.remove('error')
-//         }
-
-//         let inp = input.parentElement.parentElement
-//         let inp_p = inp.querySelector('p')
-//         let inp_span = inp.querySelector('span')
-//         let inp_img = inp.querySelector('img')
-//         if (input.classList.contains('error')) {
-//             inp_p.style.color = 'red'
-//             inp_span.style.color = 'red'
-//             inp_img.style.display = 'unset'
-//         } else {
-//             inp_p.style.color = '#4200FF'
-//             inp_span.style.color = '#949494'
-//             inp_img.style.display = 'none'
-//         }
-
-
-
-//     })
-
-// }
-
 let form = document.querySelector('.form')
 
 let inpts = form.querySelectorAll('.input_item_act input')
@@ -44,6 +7,8 @@ let comp = document.querySelector('.com')
 let erro = document.querySelector('.err')
 
 let btn = document.querySelector('button')
+
+let loud = document.querySelector('.loader')
 
 let err = 0
 
@@ -95,6 +60,11 @@ form.onsubmit = (event) => {
         submit()
     }
 
+    loud.style.display = 'unset'
+        setTimeout(() => {
+            loud.style.display = 'none'
+        },3000)
+
     btn.onclick = () => {
         if (com >= 0) {
             com = 0
@@ -119,3 +89,15 @@ function submit(params) {
 
     console.log(user);
 }
+
+let demo = document.querySelector('.demo')
+
+setTimeout(() => {
+    demo.style.opacity = 0
+    // demo.style.display = 'none'
+},3000)
+
+setTimeout(() => {
+    
+    demo.style.display = 'none'
+},5000)
