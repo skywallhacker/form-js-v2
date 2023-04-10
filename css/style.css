@@ -79,6 +79,12 @@ img {
   line-height: 17px;
   color: #949494;
 }
+.input .container .input_box .input_item_act .input_elem .valid {
+  border: 2px solid #543FD3;
+}
+.input .container .input_box .input_item_act .input_elem .invalid {
+  border: 2px solid red;
+}
 .input .container .input_box .input_item_act .input_elem .error {
   border: 2px solid #EE0004;
   border-radius: 4px;
@@ -96,6 +102,7 @@ img {
   line-height: 19px;
   padding-left: 10px;
   margin-bottom: 6px;
+  outline: none;
 }
 .input .container .input_box .input_item {
   width: 300px;

@@ -18,6 +18,7 @@ img {
     flex-direction: column;
 }
 
+
 .input {
     .container {
         max-width: 1200px;
@@ -89,6 +90,14 @@ img {
                 }
 
                 .input_elem {
+                    .valid {
+                        border: 2px solid #543FD3
+                    }
+                    
+                    .invalid {
+                        border: 2px solid red
+                    }
+
                     .error {
                         border: 2px solid #EE0004;
                         border-radius: 4px;
@@ -107,6 +116,7 @@ img {
                         line-height: 19px;
                         padding-left: 10px;
                         margin-bottom: 6px;
+                        outline: none;
                     }
                 }
             }
@@ -184,6 +194,8 @@ img {
 .black {
     color: black;
 }
+
+
 
 
 
